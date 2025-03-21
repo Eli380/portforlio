@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portifólio | Elicarlos Valentim</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Projetos</a>
+        </li>
+        <li>
+          <a>Sobre</a>
+        </li>
+        <li>
+          <a>Contato</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="principal">
+      <div>
+        <h1>Olá, eu sou <span>Elicarlos Valentim</span>.</h1>
+        <p>
+          Desenvolvedor criativo focado em construir experiências digitais
+          excepcionais e interfaces intuitivas.
+        </p>
+        <a class="botao efeito-cursor">Ver Projetos</a>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2 class="titulo-secao">Projetos</h2>
+
+      <div class="grade-projetos efeito-cursor">
+        <div class="card-projeto">
+          <img
+            class="img-projeto efeito-cursor"
+            src="./img/cafeteria/coffe-page/img/about-img.jpg"
+            alt="imagem-cafeteria"
+          />
+          <div class="info-projeto">
+            <h3>Cafeteria</h3>
+            <p>
+              "Sabores que aquecem a alma, aromas que encantam o coração.
+              Bem-vindo à Cafeteria do Eli
+            </p>
+            <a href="" >Ver Projeto →</a>
+          </div>
+        </div>
+
+        <div class="card-projeto">
+          <img
+            class="img-projeto efeito-cursor"
+            src="./img/cafeteria/img/home-img.jpg"
+            alt="imagem-coffe-page"
+          />
+          <div class="info-projeto efeito-cursor">
+            <h3>coffe-page</h3>
+            <p>
+              "Um café, um momento, um sorriso – a receita perfeita para o seu
+              dia!" ☕
+            </p>
+            <a href="http://127.0.0.1:5500/index.html">Ver Projeto →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+        <h2 class="titulo-secao">Sobre Mim</h2>
+
+        <div class="sobre">
+            <img class="img-sobre" src="./img/cafeteria/WIN_20241012_17_58_49_Pro.jpg">
+        </div>
+
+        <div class="conteudo-sobre">
+            <h2>Desenvolvedor com paixão por criar soluções digitais</h2>
+
+            <p>Sou um desenvolvedor web apaixonado por criar soluções dinâmicas e intuitivas usando HTML, CSS, PHP e JavaScript. 🚀</p>
+
+            <p>Minha abordagem combina criatividade e funcionalidade para desenvolver aplicações web intuitivas, responsivas e eficientes.💡💻</p>
+
+            <div class="habilidades">
+                <span class="tag-habilidades efeito-cursor">HTML5</span>
+                <span class="tag-habilidades efeito-cursor">CSS</span>
+                <span class="tag-habilidades efeito-cursor">Javascript</span>
+                <span class="tag-habilidades efeito-cursor">PHP</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao">
+      <h2 class="titulo-secao">Contato</h2>
+
+      <div class="botoes-contato">
+        <a href="https://wa.me/5584987251752?text=Ol%C3%A1%20fala%20comigo!" class="botao-contato whatsapp efeito-cursor">
+
+          <span>Whatsapp</span>
+        </a>
+
+        <a href="mailto:contato@meucontato.com.br" class="botao-contato email efeito-cursor">
+
+          <span>Email</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/elicarlos-alexandre-silva-31ab8727b/" class="botao-contato linkedin efeito-cursor
+        ">
+
+          <span>Linkedin</span>
+        </a>
+
+        <a href="https://github.com/Eli380" class="botao-contato github efeito-cursor">
+
+          <span>Github</span>
+        </a>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Feito com ❤️ por Elicarlos Valentim</p>
+    </footer>
+
+    <div class="cursor"></div>
+
+
+  </body>
+  <script>
+    const cursor = document.querySelector('.cursor')
+
+    document.addEventListener('mousemove', function(info){
+      cursor.style.left = info.clientX + 'px'
+      cursor.style.top = info.clientY + 'px'
+    })
+
+  </script>
+</html>
