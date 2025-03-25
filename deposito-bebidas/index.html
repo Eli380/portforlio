@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveniência Babinho</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #333; color: white; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; }
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-size: 18px; cursor: pointer; padding: 10px; transition: background 0.3s ease; }
+        nav a:hover { background: rgba(255, 255, 255, 0.2); border-radius: 5px; }
+        .container { padding: 80px 20px 20px; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .gallery img { width: 200px; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s ease; cursor: pointer; }
+        .gallery img:hover { transform: scale(1.1); }
+        .whatsapp-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #25D366; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background 0.3s ease; }
+        .whatsapp-btn:hover { background: #1ebe57; }
+    </style>
+</head>
+<body>
+    <header></header>
+    
+    
+    <div class="container" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="gallery">
+            <img src="./img/cerveja.jpg" alt="Produto 1">
+            <img src="./img/vinho.jpeg" alt="Produto 2">
+            <img src="./img/destilados.jpeg" alt="Produto 3">
+            <img src="./img/conviniencia.jpg" alt="Produto 4">
+        </div>
+    </div>
+    
+    <div class="container" id="contato">
+        <h2>Fale Conosco</h2>
+        <a href="https://wa.me/5584987251752" class="whatsapp-btn" target="_blank">Enviar mensagem no WhatsApp</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
+
