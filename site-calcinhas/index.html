@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Calcinhas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: pink;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            gap: 20px;
+            justify-items: center; /* Alinha as imagens no centro */
+        }
+        .produto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Adicionando transição suave */
+        }
+        .produto img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .produto:hover {
+            transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+        }
+        .zap-btn {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            display: block;
+            margin: 20px auto;
+            text-decoration: none;
+            width: 200px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .zap-btn:hover {
+            background-color: rgb(93, 187, 20); /* Efeito de hover no botão */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Loja da Ricarla das Calcinhas
+    </header>
+    <div class="container">
+        <div class="produto">
+            <img src="./img/Calcinha-Juvenil p.png" alt="Calcinha tamanho P">
+            <p>P - R$ 10,00</p>
+        </div>
+        <div class="produto">
+            <img src="./img/calcinha m.jpeg" alt="Calcinha tamanho M">
+            <p>M - R$ 12,00</p>
+        </div>
+        <div class="produto">
+            <img src="./img/calcinha G.jpeg" alt="Calcinha tamanho G">
+            <p>G - R$ 15,00</p>
+        </div>
+        <div class="produto">
+            <img src="./img/calcinha-infantil.jpeg" alt="Calcinha tamanho infantil">
+            <p>infantil - R$ 18,00</p>
+        </div>
+    </div>
+    <a href="https://wa.me/558497076830" class="zap-btn" id="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+
+    <script>
+        // Efeito de confirmação ao clicar no botão do WhatsApp
+        const whatsappBtn = document.getElementById('whatsapp-btn');
+
+        whatsappBtn.addEventListener('click', function() {
+            alert('Você será redirecionado para o WhatsApp!');   
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
