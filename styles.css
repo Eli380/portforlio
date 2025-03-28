@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    background: radial-gradient(#7f3d9e, #6d00d9);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.item {
+    display: none;
+    text-align: center;
+}
+
+.item.active {
+    display: block;
+}
+
+.arrows {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+/* Botão da esquerda (mais baixo e com seta virada para a esquerda) */
+.arrows button#prev {
+    position: absolute;
+    top: 55%; /* Mais para baixo */
+    left: 5%;
+    transform: rotate(0deg); /* Deixa a seta normal para a esquerda */
+}
+
+/* Botão da direita (mais alto e com seta virada para a direita) */
+.arrows button#next {
+    position: absolute;
+    top: 45%; /* Mais para cima */
+    right: 5%;
+    transform: rotate(0deg); /* Mantém a seta normal para a direita */
+}
+
+.arrows button img {
+    width: 20px;
+}
+
+.arrows button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.indicators .number {
+    font-size: 20px;
+}
+
+.indicators ul {
+    display: flex;
+    gap: 5px;
+}
+
+.indicators li {
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.indicators li.active {
+    background: #fff;
+}
+
