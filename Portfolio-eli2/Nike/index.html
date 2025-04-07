@@ -12,50 +12,33 @@
     />
     <title>Nike DevEli</title>
   </head>
-
   <body>
     <img src="img/logo.png" class="logo" />
-
+  
     <div class="caixa-principal">
       <div class="caixa-texto">
-        <h4>R$ 799,00</h4>
-
-        <h1 class="Air">Nike Air Zoom</h1>
-
-        <p>
-          Uma passada elástica para qualquer corrida, a sensação familiar e
-          perfeita do peg retorna para ajudá-lo a atingir seus objetivos. Esta
-          versão tem a mesma capacidade e resposta e suporte neutro que você
-          adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o
-          arco e os dedos
+        <h4 id="preco">R$ 799,00</h4>
+        <h1 class="Air" id="titulo">Nike Air Zoom</h1>
+        <p id="descricao">
+          Uma passada elástica para qualquer corrida, com mais conforto nas áreas sensíveis do seu pé.
         </p>
-
         <a class="botao-carrinho">Adicionar ao carrinho</a>
-
-        <!-- ✅ Botões de cores posicionados logo abaixo -->
-        <div class="caixa-botoes">
-          <div
-            onclick="mudarVisual('#ccee66', 'img/nike1.png')"
-            class="botoes verde"
-          ></div>
-          <div
-            onclick="mudarVisual('#ff9eb5', 'img/nike3.png')"
-            class="botoes rosa"
-          ></div>
-          <div
-            onclick="mudarVisual('#58cced', 'img/nike2.png')"
-            class="botoes azul"
-          ></div>
+  
+        <div class="botoes-slider">
+          <button onclick="voltarModelo()">◀</button>
+          <button onclick="proximoModelo()">▶</button>
         </div>
       </div>
-
+  
       <div class="caixa-imagem">
         <img src="img/nike1.png" class="imagem-tenis" />
       </div>
     </div>
-
+  
     <script src="scripts.js"></script>
   </body>
+  
 </html>
 
+    
 
